@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        class Produto{
+            nome;
+            preco;
+            qntd
+            constructor(nome,preco,qntd) {
+                this.nome = nome;
+                this. preco = preco;
+                this.qntd = qntd;
+            }
+            calcularTotal() {
+                return(this.preco * this.qntd).toFixed(2)
+            }
+        }
+        let Produto1 = new Produto("Arroz", 17, 5);
+        console.log(Produto1);
+        console.log(`O valor final do produto é: ${Produto1.calcularTotal()}`)
+    </script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <script>
+        class Celular{
+            marca;
+            modelo;
+            armz;
+            constructor(marca,modelo,armz){
+                this.marca = marca;
+                this.modelo = modelo;
+                this.armz = armz;
+            }
+        informacoesCelular() {
+            return(this.marca +" "+ this.modelo +" "+ this.armz);
+        }
+    }
+        let Celular1 = new Celular('Samsung','S20',128);
+        console.log(`As informações do Celular são: ${Celular1.informacoesCelular()}`);
+    </script>
+</body>
+</html>
